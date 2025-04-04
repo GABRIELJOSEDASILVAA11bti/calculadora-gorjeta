@@ -193,6 +193,11 @@ outline: 2px solid var(--topaz);
 
 }
 
+ input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+
+        display: none;
+    }
 
 @media(min-width: 920px) {
 
@@ -211,11 +216,7 @@ outline: 2px solid var(--topaz);
     }
 
 
-    input::-webkit-inner-spin-button,
-    input::-webkit-outer-spin-button {
-
-        display: none;
-    }
+   
 
     .info {
 
@@ -227,7 +228,7 @@ outline: 2px solid var(--topaz);
 
 
             button:hover  {
-            background: var(--topaz);
+            background: var(--water-leaf);
                 cursor: pointer;
                 transition: 3s;
             }
