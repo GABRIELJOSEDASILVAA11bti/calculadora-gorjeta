@@ -189,6 +189,8 @@ outline: 2px solid var(--topaz);
        font-weight: 700;
        padding-block: .9rem;
     }
+
+
 }
 
 
@@ -225,11 +227,15 @@ outline: 2px solid var(--topaz);
 
 
             button:hover  {
-                background: var(--topaz);
+            background: var(--topaz);
                 cursor: pointer;
                 transition: 3s;
             }
         }
+
+       .button-select{
+        background: var(--topaz);
+       }
     }
 }
 
