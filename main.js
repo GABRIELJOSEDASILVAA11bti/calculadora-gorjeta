@@ -78,7 +78,7 @@ function calculate() {
 
 
         let tipAmountperson = (bill * tipPercentage) / numberOfPeople
-        tipAmountStrong.innerText = '$ ${tipAmountPerson.tofixed(2)}'
+        tipAmountStrong.innerText = '$${tipAmountPerson.tofixed(2)}'
 
         let totalstrong = document.querySelector(".total Strong")
 
@@ -88,4 +88,33 @@ function calculate() {
 } else {
     console.log("Ainda não é possível calcular")
 }
+}
+
+function reset(){
+
+
+    billInput.value = ""
+
+    bill = 0
+    numberOfPeopleInput.value = ""
+   numberOfPeople = 0
+
+ removeclassbuttonSelectd()
+ document.querySelector("custom-tip").value = ""
+
+tipPercentage = 0
+
+document.querySelector(".amount strong").innerText = "$0.00"
+document.querySelector(".total strong").innerText = "$0.00"
+
+}
+
+function removeclassbuttonSelectd(){
+
+    if(button-selectd !== null){
+        buttonSelectd.classList.remove("button-selectd")
+           
+        }
+        
+
 }
